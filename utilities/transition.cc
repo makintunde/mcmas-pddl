@@ -195,6 +195,15 @@ transition::index_to_string(vector<BDD> * a)
 }
 
 void
+transition::print_plan(vector<BDD> *a)
+{
+  for (unsigned int i = 0; i < agents->size(); i++) {
+    cout << " " << (*agents)[i]->action_to_str(*label, *a);
+  }
+  cout << endl;
+}
+
+void
 transition::to_str(ofstream * myfile, vector<BDD> * a)
 {
   *myfile << "    " << fromid << " -> " << toid;

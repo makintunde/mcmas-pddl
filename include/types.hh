@@ -676,6 +676,8 @@ public:
   bool isTemporal();
   string getEpistemic1();
   string getEpistemic2();
+
+  void print_plan(vector<BDD> *a);
 };
 
 #endif // ! MCMAS_TYPES_HH

@@ -214,6 +214,9 @@ do_model_checking(bdd_parameters * para)
 						sprintf(buff, "%1d", i);
 						print_cex(para, fname, str_head + buff, idbdd, cextr);
           }
+          if (options["cex"] == 4) {
+            print_plan(para, cextr);
+          }
           clear_cex(countex, idbdd, cextr);
         }
       } 

@@ -108,6 +108,7 @@ extern string state_to_str(BDD state, vector<BDD> v);
 extern BDD append_variable_BDDs(Cudd * bddmgr, vector<BDD> * v, BDD a);
 extern int export_model(bdd_parameters * para, BDD *is, vector< vector< int >*> *countex, map< int, BDD * > *idbdd, vector< vector< transition * >*> *cextr);
 extern void print_cex(bdd_parameters * para, string fname, string str_head, map< int, BDD * > *idbdd, vector< vector< transition * >*> *cextr);
+extern void print_plan(bdd_parameters * para, vector< vector< transition * >*> *cextr);
 extern void clear_cex(vector< vector< int >*>* countex, map< int, BDD * >* idbdd, vector< vector< transition * >*>* cextr);
 extern void delete_cex(vector< vector< int >*>* countex, map< int, BDD * >* idbdd, vector< vector< transition * >*>* cextr);
 

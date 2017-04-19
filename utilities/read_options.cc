@@ -130,7 +130,7 @@ read_options(int argc, char *argv[]) {
       s = argv[++i];    // consume the argument
       options["cex"] = atoi(s.c_str());
 
-      if (options["cex"] < 0 || options["cex"] > 3) {
+      if (options["cex"] < 0 || options["cex"] > 4) {
         cout << "Parameter " << options["cex"] <<
           " is not allowed in -c option." << endl;
         wrongpara = true;
