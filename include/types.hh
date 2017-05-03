@@ -677,7 +677,7 @@ public:
   string getEpistemic1();
   string getEpistemic2();
 
-  void print_plan(vector<BDD> *a);
+  void print_plan(vector<BDD> *a, bool with_environment);
 };
 
 #endif // ! MCMAS_TYPES_HH

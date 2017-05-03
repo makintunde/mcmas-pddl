@@ -133,7 +133,7 @@ print_plan(bdd_parameters * para, vector< vector< transition * >*> *cextr)
   // print plan
   for (unsigned int ac = 0; ac < (int) cextr->size(); ac++) {
     for (unsigned int j = 0; j < (int) cextr->at(ac)->size(); j++) {
-      cextr->at(ac)->at(j)->print_plan(para->a);
+      cextr->at(ac)->at(j)->print_plan(para->a, true);
     }
   }
   cout << "----------------------------------------" << endl;
