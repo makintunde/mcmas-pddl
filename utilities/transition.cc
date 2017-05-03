@@ -198,7 +198,7 @@ void
 transition::print_plan(vector<BDD> *a, bool with_environment)
 {
   for (unsigned int i = with_environment ? 1 : 0; i < agents->size(); i++) {
-    cout << " " << (*agents)[i]->action_to_str(*label, *a);
+    cout << "  " << (*agents)[i]->action_to_str(*label, *a);
   }
   cout << endl;
 }
